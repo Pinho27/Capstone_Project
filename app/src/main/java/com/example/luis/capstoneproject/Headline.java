@@ -1,14 +1,25 @@
 package com.example.luis.capstoneproject;
 
+import android.arch.persistence.room.Embedded;
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+import android.arch.persistence.room.TypeConverters;
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.support.annotation.NonNull;
 
+@Entity
 public class Headline implements Parcelable {
 
+    @Embedded
     private Source source;
-    private String author, title, description, url, urlToImage, publishedAt;
 
-    public Headline(Source source, String author, String title, String description, String url, String urlToImage, String publishedAt) {
+    private String author, title, description, urlToImage, publishedAt;
+    @PrimaryKey
+    @NonNull
+    private String url;
+
+    public Headline(Source source, String author, String title, String description, @NonNull String url, String urlToImage, String publishedAt) {
         this.source = source;
         this.author = author;
         this.title = title;

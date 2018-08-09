@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/category"
-            android:fontFamily="sans-serif"
+            android:fontFamily="@font/patua_one"
             android:textSize="34sp"
             android:textColor="@color/headline_text_color"
             tools:text="lsdfssdfs" />

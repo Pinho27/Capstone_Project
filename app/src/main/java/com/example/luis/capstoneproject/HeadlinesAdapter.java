@@ -48,10 +48,16 @@ class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyViewHolde
         holder.headline_source.setText(sourceName);
 
 
-        if(headline.getUrlToImage() == null) {
-            //Picasso.get().load(headline.urlToImage).into(holder.headline_image);
-        }else
-            Picasso.get().load(headline.getUrlToImage()).into(holder.headline_image);
+        if(headline.getUrlToImage() != null) {
+            if(headline.getUrlToImage().isEmpty()) {
+
+            }
+            else{
+                Picasso.get().load(headline.getUrlToImage()).into(holder.headline_image);
+            }
+        }else{
+
+        }
     }
 
     @Override

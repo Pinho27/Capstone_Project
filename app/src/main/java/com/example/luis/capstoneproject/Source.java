@@ -1,8 +1,10 @@
 package com.example.luis.capstoneproject;
 
+import android.arch.persistence.room.Entity;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+@Entity
 public class Source implements Parcelable {
 
     private String id, name;

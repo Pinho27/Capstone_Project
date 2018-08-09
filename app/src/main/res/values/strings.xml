@@ -14,4 +14,12 @@
     <string name="permissions_message">The app needs permission to acess the device\'s location in order to get the local news.</string>
     <string name="permissions_title">Permission required</string>
     <string name="action_favorite">Favorite</string>
+    <string name="offline_view_text">No internet connection, can\'t get news 😯</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="no_desc_provided">(No description provided)</string>
+    <string name="about">About</string>
+    <string name="made_by">Made by Luís Pinho</string>
+    <string name="image_desc_about">About image. Newspapper icon</string>
+    <string name="credits_about">News powered by News API --- Icons by Flaticon</string>
 </resources>
